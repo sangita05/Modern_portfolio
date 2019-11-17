@@ -30,12 +30,12 @@
     visibility: visible; }
   .menu-branding, .menu-nav {
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     width: 50%;
     height: 100vh;
     float: left;
-    flex-flow: column wrap;
     overflow: hidden; }
   .menu-nav {
     margin: 0;
@@ -93,6 +93,14 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -104,7 +112,8 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
+  line-height: 1.5;
+  letter-spacing: 2px; }
   body#bg-img {
     background: url(../dist/img/background.jpg);
     background-attachment: fixed;
