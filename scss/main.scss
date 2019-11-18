@@ -1,6 +1,5 @@
 @import "config";
 @import "menu";
-@import "mobile";
 
 * {
   margin: 0;
@@ -72,6 +71,42 @@ main {
     overflow: hidden;
     h1 {
       margin-top: 20vh;
+    }
+  }
+
+  .lg-button {
+    margin-top: 30px;
+    display: flex;
+    // justify-content: space-around;
+    // align-items: center;
+
+    .cv {
+      width: 170px;
+      // height: 100px;
+      border: 2px solid $secondary-color;
+      padding: 10px;
+      border-radius: 7%;
+      text-align: center;
+      margin-right: 1rem;
+      font-weight: 300;
+
+      &:hover {
+        background: #fff;
+        color: $secondary-color;
+      }
+    }
+    .hire {
+      width: 170px;
+      border: 2px solid #fff;
+      padding: 10px;
+      border-radius: 7%;
+      text-align: center;
+      font-weight: 300;
+
+      &:hover {
+        background: $secondary-color;
+        color: #fff;
+      }
     }
   }
 }
@@ -152,13 +187,13 @@ h3 {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem;
-  display: inline-block;
+  // display: inline-block;
 
   div {
     font-size: 2rem;
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
+    margin: 3.3rem 1rem;
     @include easeOut;
 
     &:hover {
@@ -205,4 +240,4 @@ h3 {
   height: 60px;
 }
 
-// @import "mobile";
+@import "mobile";

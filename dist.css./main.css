@@ -93,52 +93,6 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
-@media screen and (min-width: 1171px) {
-  .projects {
-    grid-template-columns: repeat(4, 1fr); } }
-
-@media screen and (min-width: 769px) and (max-width: 1170px) {
-  .projects {
-    grid-template-columns: repeat(3, 1fr); } }
-
-@media screen and (max-width: 768px) {
-  main {
-    align-items: center;
-    text-align: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem; }
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    ul.menu-nav.show,
-    div.menu-branding.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px; }
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu-branding .portrait {
-      background: url(../dist/img/nikki3small.jpg);
-      width: 150px;
-      height: 150px; }
-  .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
-    grid-template-columns: 1fr; }
-  .projects {
-    grid-template-columns: repeat(2, 1fr); } }
-
-@media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; }
-  .projects {
-    grid-template-columns: 1fr; } }
-
 * {
   margin: 0;
   padding: 0;
@@ -207,6 +161,30 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+  main .lg-button {
+    margin-top: 30px;
+    display: flex; }
+    main .lg-button .cv {
+      width: 170px;
+      border: 2px solid #668c8a;
+      padding: 10px;
+      border-radius: 7%;
+      text-align: center;
+      margin-right: 1rem;
+      font-weight: 300; }
+      main .lg-button .cv:hover {
+        background: #fff;
+        color: #668c8a; }
+    main .lg-button .hire {
+      width: 170px;
+      border: 2px solid #fff;
+      padding: 10px;
+      border-radius: 7%;
+      text-align: center;
+      font-weight: 300; }
+      main .lg-button .hire:hover {
+        background: #668c8a;
+        color: #fff; }
 
 .about-info {
   display: grid;
@@ -258,13 +236,12 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 1rem;
-  display: inline-block; }
+  margin-top: 1rem; }
   .boxes div {
     font-size: 2rem;
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
+    margin: 3.3rem 1rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
@@ -296,3 +273,51 @@ h3 {
   background: black;
   color: #fff;
   height: 60px; }
+
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url(../dist/img/nikki3small.jpg);
+      width: 150px;
+      height: 150px; }
+  .about-info {
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-columns: 1fr; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); }
+  .boxes div {
+    padding: 0 1rem; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; }
+  .projects {
+    grid-template-columns: 1fr; } }
