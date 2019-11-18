@@ -185,7 +185,8 @@ main {
     background: #515151;
     padding: 0.5rem;
     border-bottom: #eece1a 5px solid;
-    align-items: center; }
+    align-items: center;
+    text-align: center; }
 
 h3,
 h5 {
